@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+  
+    // Create and initialize an array with 3 rows
+      // and 2 columns
+    int arr[3][2] = { { 0, 1 }, { 2, 3 }, { 4, 5 } };
+    int c= 10, *b = &c;
+    int (*ptr)[2] = arr;
+    
+   printf("%d\n", &arr);
+   printf("%d\n", &arr[0]);
+   printf("%d\n", *(arr+0));
+   printf("%d\n", *(arr+1));
+   
+   printf("%d\n", &b);
+   printf("%d\n", &b[0]);
+   printf("%d\n", *(b+0));
+   printf("%d\n", *(b+1));
+    return 0;
+}
+
+Output:
+356440144
+356440144
+356440144
+356440152
+356440128
+356440140
+10
+0
