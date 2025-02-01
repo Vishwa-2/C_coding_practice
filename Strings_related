@@ -1,0 +1,23 @@
+/* 1. Check the length of the String*/
+// Online C compiler to run C program online
+#include <stdio.h>
+int calculate_len(char *a)
+{
+    int count = 0;
+    while(*a != '\0' )
+    {
+        count++;
+        a++;
+    }
+    return count;
+}
+
+int main()
+{
+    char a[] = "Hi, I am Vishwa";
+    int total = calculate_len(a);
+    printf("Total is %d", total);           //15
+    return 0;
+}
+
+2. 
